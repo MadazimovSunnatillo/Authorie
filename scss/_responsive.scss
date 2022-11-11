@@ -1,11 +1,13 @@
-@media (max-width: 1226px) {
+@media (max-width: 1200px) {
     .container {
-      max-width: 1000px;
+        max-width: 1000px;
     }
+
     header#main-header {
         .navbar-left__section .nav__list {
             display: none;
         }
+
         .dropdown {
             display: block;
         }
@@ -15,14 +17,39 @@
 
 @media (max-width: 1024px) {
     .container {
-      max-width: 880px;
+        max-width: 880px;
     }
 }
 
-@media (max-width: 756px) {
+@media (max-width: 896px) {
     .container {
-      max-width: 100%;
-      padding: 0 1rem;
+        max-width: 700px;
+    }
+
+    header#main-header {
+        .nav-menu {
+            display: none;
+        }
+    }
+    section#showcase {
+        .flex {
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            .showcase__button {
+                padding: 10px 20px;
+                margin-bottom: 3rem;
+                font-size: 10px;
+                letter-spacing: 3px;
+            }
+        }
+       
     }
 }
 
+
+@media (max-width: 705px) {
+    .container {
+        max-width: 500px;
+    }
+}

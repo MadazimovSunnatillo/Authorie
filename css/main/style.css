@@ -94,7 +94,7 @@ header#main-header .flex .navbar-left__section .nav__list .nav__link {
 header#main-header .flex .navbar-left__section .nav__list .nav__link:hover {
   border-bottom: 2px solid red;
   border-bottom-width: 5px;
-  transition: 0.2s all ease-in;
+  transition: 0.3s all ease-in;
 }
 
 .navbar-right__section {
@@ -121,7 +121,7 @@ header#main-header .flex .navbar-left__section .nav__list .nav__link:hover {
   gap: 2rem;
 }
 
-@media (max-width: 1226px) {
+@media (max-width: 1200px) {
   .container {
     max-width: 1000px;
   }
@@ -137,9 +137,94 @@ header#main-header .flex .navbar-left__section .nav__list .nav__link:hover {
     max-width: 880px;
   }
 }
-@media (max-width: 756px) {
+@media (max-width: 896px) {
   .container {
-    max-width: 100%;
-    padding: 0 1rem;
+    max-width: 700px;
   }
+  header#main-header .nav-menu {
+    display: none;
+  }
+  section#showcase .flex {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  section#showcase .flex .showcase__button {
+    padding: 10px 20px;
+    margin-bottom: 3rem;
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+}
+@media (max-width: 705px) {
+  .container {
+    max-width: 500px;
+  }
+}
+section#showcase {
+  background-color: #CCE7FF;
+  padding-top: 97px;
+}
+section#showcase .flex {
+  align-items: center;
+  justify-content: space-around;
+}
+section#showcase .flex .showcase__info .showcase__title {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 105.5%;
+  color: #2F2F2F;
+  width: 371px;
+}
+section#showcase .flex .showcase__info .showcase__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124%;
+  color: #2F2F2F;
+  width: 400px;
+  padding: 28px 0;
+}
+section#showcase .flex .showcase__info a {
+  padding: 14px 32px;
+  border: 1px solid #3A85F4;
+  border-radius: 123px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  background-color: #3A85F4;
+}
+section#showcase .flex .showcase__info a:hover {
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 0.2s all ease-in;
+}
+
+section#card {
+  padding-top: 67px;
+}
+section#card .card__title {
+  text-align: center;
+  margin-bottom: 44px;
+}
+section#card .grid {
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+section#card .grid img {
+  padding: 24px 22px;
+  background: #FEFEFF;
+  box-shadow: 0px 8px 23px rgba(44, 128, 255, 0.2);
+  border-radius: 14px;
+}
+section#card .grid .card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #2F2F2F;
+  width: 170px;
+  margin-bottom: 80px;
 }/*# sourceMappingURL=style.css.map */
