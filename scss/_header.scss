@@ -1,0 +1,96 @@
+header#main-header {
+    padding: 25px 0;
+    position: sticky;
+    top: 0;
+    background: #fff;
+
+    .dropdown {
+        display: none;
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #fff;
+            box-shadow: 0 0 20px grey;
+            transform: translateX(100%);
+            padding: 1rem;
+            z-index: 9999;
+            transition: transform 0.3s ease-in;
+
+            li {
+                padding: 1rem;
+                margin-top: 1rem;
+                background-color: rgba(black, 0.2);
+                transition: all 0.3s ease-in;
+
+                &:hover {
+                    background-color: rgba(black, 0.4);
+                    text-indent: 1rem;
+                }
+            }
+        }
+
+        input[type="checkbox"]:checked+.sidebar {
+            transform: translateX(0);
+        }
+    }
+
+    .flex {
+        justify-content: space-between;
+        align-items: center;
+
+        .navbar-left__section {
+            gap: 37px;
+
+            .nav__list {
+                .nav__item {
+
+                    margin-right: 30px;
+                }
+
+                .nav__link {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #575756;
+                    padding-bottom: 10px;
+                }
+
+                .nav__link:hover {
+                    border-bottom: 2px solid red;
+                    border-bottom-width: 5px;
+                    transition: 0.2s all ease-in;
+                }
+            }
+        }
+    }
+}
+
+
+
+.navbar-right__section {
+    gap: 38px;
+}
+
+.nav-button {
+    padding: 12px 33px;
+    border: 1px solid #3A85F4;
+    border-radius: 123px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #3A85F4;
+}
+
+.nav-button:hover {
+    text-decoration: underline;
+    background-color: rgba(black, 0.2);
+    transition: 0.2s all ease-in;
+}
+
+.nav-menu {
+    gap: 2rem;
+}

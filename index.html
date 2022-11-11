@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authortie</title>
+    <link rel="stylesheet" href="./css/main/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- start header -->
+
+    <header id="main-header">
+      <div class="container flex">
+        <div class="navbar-left__section flex">
+          <a href="#"><img src="./images/nav-logo.svg" alt="nav-logo" /></a>
+          <ul class="nav__list flex">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Аналитика</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Сообщество</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Для организаций</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-right__section flex">
+          <a href="#" class="nav-button">Создать заявку</a>
+          <div class="nav-menu flex">
+            <a href="#"><img src="./images/nav-chats.svg" alt="nav-chats" /></a>
+            <a href="#">
+              <img
+                src="./images/nav-notifications.svg"
+                alt="nav-notifications"
+              />
+            </a>
+            <a href="#">
+              <img src="./images/nav-profile.svg" alt="nav-profile" />
+            </a>
+          </div>
+          <div class="dropdown">
+            <label for="bars"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="bars" hidden />
+            <aside class="sidebar">
+              <label for="bars"><i class="fa-solid fa-bars"></i></label>
+              <ul>
+                <li><a href="#">Аналитика</a></li>
+                <li><a href="#">Сообщество</a></li>
+                <li><a href="#">Сообщество</a></li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- finish header -->
+  </body>
+</html>

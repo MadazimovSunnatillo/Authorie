@@ -1,0 +1,28 @@
+@media (max-width: 1226px) {
+    .container {
+      max-width: 1000px;
+    }
+    header#main-header {
+        .navbar-left__section .nav__list {
+            display: none;
+        }
+        .dropdown {
+            display: block;
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+      max-width: 880px;
+    }
+}
+
+@media (max-width: 756px) {
+    .container {
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+}
+
