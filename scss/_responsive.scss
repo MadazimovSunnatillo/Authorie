@@ -19,6 +19,8 @@
     .container {
         max-width: 880px;
     }
+
+
 }
 
 @media (max-width: 896px) {
@@ -31,11 +33,13 @@
             display: none;
         }
     }
+
     section#showcase {
         .flex {
             flex-direction: column;
             justify-items: center;
             align-items: center;
+
             .showcase__button {
                 padding: 10px 20px;
                 margin-bottom: 3rem;
@@ -43,13 +47,55 @@
                 letter-spacing: 3px;
             }
         }
-       
+
     }
+// cardlarni responsivi nito korish kerak
 }
+
+
+
 
 
 @media (max-width: 705px) {
     .container {
         max-width: 500px;
+    }
+}
+
+@media (max-width: 510px) {
+    .container {
+        min-width: 400px;
+    }
+
+    header#main-header {
+        .flex {
+            justify-content: space-evenly;
+        }
+    }
+
+    section#showcase {
+        .showcase__info {
+            padding-bottom: 4rem;
+
+        }
+
+        .showcase__image {
+            position: relative;
+
+            img {
+                width: 250px;
+                position: absolute;
+                bottom: 0;
+                right: 1;
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 380px) {
+    .container {
+        max-width: 300px;
     }
 }
