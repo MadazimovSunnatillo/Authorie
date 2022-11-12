@@ -134,56 +134,10 @@ header#main-header .flex .navbar-left__section .nav__list .nav__link:hover {
 }
 @media (max-width: 1024px) {
   .container {
-    max-width: 880px;
+    max-width: 768px;
   }
-}
-@media (max-width: 896px) {
-  .container {
-    max-width: 700px;
-  }
-  header#main-header .nav-menu {
-    display: none;
-  }
-  section#showcase .flex {
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-  }
-  section#showcase .flex .showcase__button {
-    padding: 10px 20px;
-    margin-bottom: 3rem;
-    font-size: 10px;
-    letter-spacing: 3px;
-  }
-}
-@media (max-width: 705px) {
-  .container {
-    max-width: 500px;
-  }
-}
-@media (max-width: 510px) {
-  .container {
-    min-width: 400px;
-  }
-  header#main-header .flex {
-    justify-content: space-evenly;
-  }
-  section#showcase .showcase__info {
-    padding-bottom: 4rem;
-  }
-  section#showcase .showcase__image {
-    position: relative;
-  }
-  section#showcase .showcase__image img {
-    width: 250px;
-    position: absolute;
-    bottom: 0;
-    right: 1;
-  }
-}
-@media (max-width: 380px) {
-  .container {
-    max-width: 300px;
+  section#person .grid {
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 }
 section#showcase {
@@ -219,6 +173,7 @@ section#showcase .flex .showcase__info a {
   color: #fff;
   display: inline-block;
   background-color: #3A85F4;
+  margin-bottom: 69px;
 }
 section#showcase .flex .showcase__info a:hover {
   text-decoration: underline;
@@ -263,6 +218,14 @@ section#persons h2 {
   line-height: 24px;
   color: #383838;
   text-align: center;
+}
+section#persons h5 {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 105%;
+  letter-spacing: -0.01em;
+  color: #2F2F2F;
+  width: 336px;
 }
 section#persons .person__description {
   font-weight: 400;
